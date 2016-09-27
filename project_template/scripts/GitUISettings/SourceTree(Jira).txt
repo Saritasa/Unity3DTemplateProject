@@ -1,0 +1,2 @@
+Click Repository -> Repository settings -> Advanced -> Commit text link -> Add.
+Jira: https://saritasa.atlassian.net, project prfix, like TRU, TRIV.

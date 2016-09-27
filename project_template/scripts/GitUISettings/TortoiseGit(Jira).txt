@@ -1,0 +1,7 @@
+; Replace PROJECT_PREFIX. Copy to local git config.
+[bugtraq]
+	url = https://saritasa.atlassian.net/browse/%BUGID%
+	logregex = "(?:\\s|^)#([A-Z]+-[0-9]+)(?=\\s|$)\n[A-Z]+-[0-9]+"
+	warnifnoissue = true
+	message = "#PROJECT_PREFIX-%BUGID%"
+	append = true

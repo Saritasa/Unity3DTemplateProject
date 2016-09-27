@@ -1,0 +1,3 @@
+Click Repository -> Repository settings -> Advanced -> Commit text link -> Add.
+Regex pattern: #(\d+)
+Link to URL: https://crm.saritasa.com/v2/tasks/$1

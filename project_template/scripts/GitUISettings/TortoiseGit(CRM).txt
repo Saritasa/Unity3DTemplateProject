@@ -1,0 +1,7 @@
+; Copy to local git config.
+[bugtraq]
+	url = https://crm.saritasa.com/v2/tasks/%BUGID%
+	logregex = "(?:\\s|^)#([0-9]+)(?=\\s|$)\n[0-9]+"
+	warnifnoissue = true
+	message = "#%BUGID%"
+	append = true
