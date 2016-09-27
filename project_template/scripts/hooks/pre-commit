@@ -35,7 +35,7 @@ Please add \`$base' to git as well.
 EOF
 			exit 1
 		fi
-	else
+	elif [ "${base: -1}" != "/" ]; then # Skip files which start with . (e.g. .gitkeep)
 		p="$f"
 		while [ "$p" != "Assets" ]; do
 			if [ $(git ls-files --cached -- "$p.meta" | wc -l) = 0 ]; then
@@ -73,7 +73,7 @@ Please remove \`$base' from git as well.
 EOF
 			exit 1
 		fi
-	else
+	elif [ "${base: -1}" != "/" ]; then # Skip files which start with . (e.g. .gitkeep)
 		p="$f"
 		while [ "$p" != "Assets" ]; do
 			if [ $(git ls-files --cached -- "$p" | wc -l) = 0 ] && [ $(git ls-files --cached -- "$p.meta" | wc -l) != 0 ]; then

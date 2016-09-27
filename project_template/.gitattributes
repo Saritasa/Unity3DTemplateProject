@@ -30,5 +30,3 @@
 *.prefab eol=lf
 *.meta  eol=lf
 *.asset  eol=lf
-
-*.xlsx filter=lfs diff=lfs merge=lfs -text
