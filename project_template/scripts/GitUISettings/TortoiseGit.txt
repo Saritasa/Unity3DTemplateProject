@@ -1,0 +1,19 @@
+; CRM
+; Copy to local git config.
+[bugtraq]
+	url = https://crm.saritasa.com/v2/tasks/%BUGID%
+	logregex = "(?:\\s|^)#([0-9]+)(?=\\s|$)\n[0-9]+"
+	warnifnoissue = true
+	message = "#%BUGID%"
+	append = true
+
+; Jira
+; Replace PROJECT_PREFIX. Copy to local git config.
+[bugtraq]
+	url = https://saritasa.atlassian.net/browse/%BUGID%
+	logregex = "(?:\\s|^)#([A-Z]+-[0-9]+)(?=\\s|$)\n[A-Z]+-[0-9]+"
+	warnifnoissue = true
+	message = "#PROJECT_PREFIX-%BUGID%"
+	append = true
+
+; Consider to disable: Settings->Advanced->RefreshFileListAfterResolvingConflict. This will save your time during merging.
