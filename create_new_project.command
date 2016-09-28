@@ -31,7 +31,7 @@ cp -rf ./project_template/. ./$projectname/
 
 mkdir $projectname/develop/$projectname
 
-cp -rf ./project_structure/. ./$projectname/develop/$projectname/Assets/
+cp -rf ./project_structure/. ./$projectname/develop/$projectname
 
 cd $projectname
 
@@ -39,9 +39,7 @@ cd $projectname
 
 git lfs install --local
 
-echo "Please, close Unity editor when it finishes project creation"
-
-"$unityBin" -createProject develop/$projectname
+"$unityBin" -projectPath $PWD/develop/$projectname -quit -batchmode
 
 git add .
 
