@@ -39,4 +39,4 @@ Thumbs.db
 # ===================================================================================== #
 !develop/*/Assets/UserWorkspace
 develop/*/Assets/UserWorkspace/*
-!develop/Test/Assets/UserWorkspace/.gitkeep
+!develop/*/Assets/UserWorkspace/.gitkeep
