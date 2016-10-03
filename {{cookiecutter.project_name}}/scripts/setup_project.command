@@ -1,11 +1,11 @@
 #!/bin/sh
 
-if [[ "$1" == 'mac' ]]; then
+if [[ "$1" == 'Mac' ]]; then
    git config core.autocrlf input
-elif [[ "$1" == 'windows' ]]; then
+elif [[ "$1" == 'Windows' ]]; then
    git config core.autocrlf true
 else
-   echo "Error: Specify OS type. Usage: setup_project.command ostype [options: 'mac' 'windows']"
+   echo "Error: Specify OS type. Usage: setup_project.command ostype [options: 'Mac' 'Windows']"
    exit 1
 fi
 
