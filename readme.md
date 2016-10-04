@@ -38,8 +38,9 @@ choco install git-lfs
 ```
 Python package for chocolatey is broken at moment, please use following script for installation of python and cookiecutter:
 ```
-wget https://raw.githubusercontent.com/Saritasa/Unity3DTemplateProject/master/InstallCookiecutterWin.ps1 -OutFile InstallCookiecutterWin.ps1
+iwr https://raw.githubusercontent.com/Saritasa/Unity3DTemplateProject/master/InstallCookiecutterWin.ps1 -OutFile InstallCookiecutterWin.ps1
 .\InstallCookiecutterWin.ps1
+rm InstallCookiecutterWin.ps1
 ```
 If you already have python, run:
 ```
