@@ -1,7 +1,6 @@
 {
-  "project_full_name": "Full name of new project",
-  "project_description": "TODO: Several words about project.",
   "project_name": "new_project_name",
+  "project_description": "TODO: Several words about project.",
   "os_type": ["Windows", "Mac"],
   "use_gitlfs": ["y", "n"]
 }

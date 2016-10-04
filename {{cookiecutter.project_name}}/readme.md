@@ -1,4 +1,4 @@
-# {{ cookiecutter.project_full_name }}
+# {{ cookiecutter.project_name }}
 
 # Description:
 {{ cookiecutter.project_description }}
