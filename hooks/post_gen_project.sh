@@ -36,7 +36,7 @@ echo "Running unity to create empty project..."
 echo "[If script stuck (normally it takes < 30s) on this stage -- close script and run Unity directly"
 echo "There are probably some problems on unity startup, e.g. user is not logged in]"
 
-"$unityBin" -projectPath $PWD/develop/$projectname -quit -batchmode
+"$unityBin" -projectPath $PWD/src/$projectname -quit -batchmode
 
 git add .
 
