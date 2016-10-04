@@ -2,7 +2,7 @@ Bugtraq settings
 
 Jira:
 Click Repository -> Repository settings -> Advanced -> Commit text link -> Add.
-Jira: https://saritasa.atlassian.net, project prfix, like TRU, TRIV.
+Jira: https://saritasa.atlassian.net, project prefix, like TRU, TRIV.
 
 CRM:
 Click Repository -> Repository settings -> Advanced -> Commit text link -> Add.
