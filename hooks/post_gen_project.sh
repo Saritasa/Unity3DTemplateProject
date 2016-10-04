@@ -27,7 +27,14 @@ git init
 
 {% if cookiecutter.use_gitlfs == "y" %}
 git lfs install --local
+{% else %}
+# Remove git-lfs specific files
+rm scripts/fix_false_modified_files.command
 {% endif %}
+
+echo "Running unity to create empty project..."
+echo "[If script stuck (normally it takes < 30s) on this stage -- close script and run Unity directly"
+echo "There are probably some problems on unity startup, e.g. user is not logged in]"
 
 "$unityBin" -projectPath $PWD/develop/$projectname -quit -batchmode
 
