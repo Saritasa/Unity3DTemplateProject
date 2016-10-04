@@ -3,4 +3,4 @@
 # Fork from https://github.com/3pjgames/unity-git-hooks
 
 # Remove empty assets directory
-find develop/*/Assets -depth -type d -empty -delete
+find src/*/Assets -depth -type d -empty -delete

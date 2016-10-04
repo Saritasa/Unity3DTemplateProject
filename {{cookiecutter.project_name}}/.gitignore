@@ -37,6 +37,6 @@ Thumbs.db
 # It is useful to store tools and editor extension which is convenient 
 # for you but could be inconvenient or not required for other contributors.
 # ===================================================================================== #
-!develop/*/Assets/UserWorkspace
-develop/*/Assets/UserWorkspace/*
-!develop/*/Assets/UserWorkspace/.gitkeep
+!src/*/Assets/UserWorkspace
+src/*/Assets/UserWorkspace/*
+!src/*/Assets/UserWorkspace/.gitkeep

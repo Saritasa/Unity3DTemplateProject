@@ -20,7 +20,7 @@ fi
 # Redirect output to stderr.
 exec 1>&2
 
-git diff --cached --name-only --diff-filter=A -z $against -- develop/*/Assets | while read -d $'\0' f; do
+git diff --cached --name-only --diff-filter=A -z $against -- src/*/Assets | while read -d $'\0' f; do
 	ext="${f##*.}"
 	base="${f%.*}"
 
@@ -58,7 +58,7 @@ if [ "$ret" != 0 ]; then
 	exit "$ret"
 fi
 
-git diff --cached --name-only --diff-filter=D -z $against -- develop/*/Assets | while read -d $'\0' f; do
+git diff --cached --name-only --diff-filter=D -z $against -- src/*/Assets | while read -d $'\0' f; do
 	ext="${f##*.}"
 	base="${f%.*}"
 
