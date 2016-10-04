@@ -5,7 +5,7 @@ if ($installedProduct)
     echo "Python is already installed to your system. Options:"
     echo " * Uninstall python, run script again."
     echo " * call: 'pip install cookiecutter', but make sure that [path to python]\Scripts are added to path."
-    echo "   Otherwise cookicutter command will not work withou full path specifing."
+    echo "   Otherwise cookicutter command will not work without full path specifing."
 }
 
 echo "Downloading python 3.5.2..."
