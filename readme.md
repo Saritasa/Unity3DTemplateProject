@@ -12,6 +12,10 @@ This project requires following binaries:
 * cookiecutter
 * bash (for windows, shipped with git)
 
+**Attention**:
+Source tree for Mac, by default, uses emdedded versions of git and git-lfs which are older than reqiured. Install last versions and switch to 'Use system ...' settings in SourceTree -> Preferences -> Git:
+![Hint for SourceTree on Mac](https://raw.githubusercontent.com/Saritasa/Unity3DTemplateProject/master/iamges/use-system-git.png "Hint for SourceTree on Mac")
+
 # Setup instructions (Mac)
 Exclude steps if you already have certain component. Or update it, see: ```brew upgrade ...```
 ```
