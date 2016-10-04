@@ -1,3 +1,4 @@
+{%- if cookiecutter.use_gitlfs == "y" -%}
 *.wav filter=lfs diff=lfs merge=lfs -text
 *.fbx filter=lfs diff=lfs merge=lfs -text
 *.tif filter=lfs diff=lfs merge=lfs -text
@@ -24,6 +25,7 @@
 *.mp3 filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
 *.aif filter=lfs diff=lfs merge=lfs -text
+{%- endif %}
 
 *.unity  eol=lf
 *.mat    eol=lf
