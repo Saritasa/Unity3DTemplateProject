@@ -25,3 +25,6 @@ SourceTree for Mac, by default, uses embedded version of git {% if cookiecutter.
 # Note:
 Use ```git lfs clone``` in order to clone project. It loads lfs-project more faster than usual ```git clone```.
 {%- endif -%}
+
+# Project
+It is required to maintain original project skeleton ([folder structure](https://kb.saritasa.com/Unity/UnityProjectStructure)). It is not restricted to add new folders or remove some of leaf folders. But changing the nesting may spoil some utility scripts or tools which were created for certain file structure.
