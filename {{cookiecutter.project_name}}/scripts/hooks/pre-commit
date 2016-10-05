@@ -29,6 +29,8 @@ git diff --cached --name-only --diff-filter=A -z $against -- src/*/Assets | whil
 			cat <<EOF
 Error: Redudant meta file.
 
+Possible reason: Project folder structure was changed from outside the Unity.
+
 Meta file \`$f' is added, but \`$base' is not in the git index.
 
 Please add \`$base' to git as well.
@@ -41,6 +43,8 @@ EOF
 			if [ $(git ls-files --cached -- "$p.meta" | wc -l) = 0 ]; then
 				cat <<EOF
 Error: Missing meta file.
+
+Possible reason: Project folder structure was changed from outside the Unity.
 
 Asset \`$f' is added, but \`$p.meta' is not in the git index.
 
@@ -67,6 +71,8 @@ git diff --cached --name-only --diff-filter=D -z $against -- src/*/Assets | whil
 			cat <<EOF
 Error: Redudant meta file.
 
+Possible reason: Project folder structure was changed from outside the Unity.
+
 Meta file \`$f' is removed, but \`$base' is still in the git index.
 
 Please remove \`$base' from git as well.
@@ -79,6 +85,8 @@ EOF
 			if [ $(git ls-files --cached -- "$p" | wc -l) = 0 ] && [ $(git ls-files --cached -- "$p.meta" | wc -l) != 0 ]; then
 				cat <<EOF
 Error: Missing meta file.
+
+Possible reason: Project folder structure was changed from outside the Unity.
 
 Asset \`$f' is removed, but \`$p.meta' is still in the git index.
 
