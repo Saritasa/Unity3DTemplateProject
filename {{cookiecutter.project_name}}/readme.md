@@ -1,28 +1,27 @@
 # {{ cookiecutter.project_name }}
 
+# Important
+Do not forget to run this script after project clone:
+
+```./scripts/setup_project.command```
+
+Otherwise project will be not initialized, git settings are not adjusted, git hooks are not installed.
+It is safe to run this script several times (in case if you forget whether you executed it before).
+
 # Description:
 {{ cookiecutter.project_description }}
 
 # Requirements
 This project requires following binaries: 
 * git (min 2.9.0)
-{%- if cookiecutter.use_gitlfs == "y" -%}
+{%- if cookiecutter.use_gitlfs == "y" %}
 * git-lfs (min 1.4.1)
-{%- endif -%}
+{%- endif %}
 
 **Attention**:
-Source tree for Mac, by default, uses emdedded version of git {% if cookiecutter.use_gitlfs == "y" -%} [git-lfs] {% endif %}which is older than reqiured. Install last version of binaries and switch to 'Use system git' {% if cookiecutter.use_gitlfs == "y" -%} [Use system git-lfs] {% endif %} in SourceTree -> Preferences -> Git.
-
-# Note:
-Do not forget to run /scripts/setup_project.command script when clone project:
-
-git {% if cookiecutter.use_gitlfs == "y" -%}lfs {% endif %}clone url
-./scripts/setup_project.command Windows
-
-And for Mac:
-git {% if cookiecutter.use_gitlfs == "y" -%}lfs {% endif %}clone url
-./scripts/setup_project.command Mac
+SourceTree for Mac, by default, uses embedded version of git {% if cookiecutter.use_gitlfs == "y" -%} [git-lfs] {% endif %}which is older than required. Install last version of binaries and switch to 'Use system ...' option in **SourceTree -> Preferences -> Git**.
 
 {% if cookiecutter.use_gitlfs == "y" -%}
-git lfs clone loads lfs-project more faster than usual clone. setup_project.command installs git hooks and adjust local git config to cover Unity workflows.
+# Note:
+Use ```git lfs clone``` in order to clone project. It loads lfs-project more faster than usual ```git clone```.
 {%- endif -%}

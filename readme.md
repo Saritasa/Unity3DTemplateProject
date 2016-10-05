@@ -51,3 +51,19 @@ cookiecutter https://github.com/Saritasa/Unity3DTemplateProject.git
 
 # Result
 New .git repo, configured to work with Unity and git-lfs (optional). It contains git-hooks, useful scripts and git configs which solve certain 'git vs Unity' problems. Also it contains Unity project structure which is recomended by 'Saritasa Unity guidelines and best practicies'.
+
+# What's happening
+> What's happening when i call cookiecutter for this repo?
+
+Answer:
+* ```git clone``` current repo
+* Run quiz
+* Make replacements in project according to quiz resuts ({{ cookiecutter.var }} is replaced by 'var_from_quiz')
+* Call [post_gen_project.sh](https://github.com/Saritasa/Unity3DTemplateProject/blob/master/hooks/post_gen_project.sh "hook")  hook:
+  * Create .gitattributes file
+  * Initialize git in destination folder
+  * Run ```./scripts/setup_project.command```
+  * [optional] Initialize git-lfs
+  * [optional] Remove git-lfs specific stuf from non-lfs project
+  * Run Unity without UI in order to create empty project
+  * Commit all changes to git

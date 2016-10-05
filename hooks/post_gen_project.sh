@@ -34,7 +34,7 @@ rm scripts/fix_false_modified_files.command
 
 echo "Running Unity to create empty project..."
 echo ""
-echo "[IF PROGRESS STUCK[> 1 min]]: Close script and run Unity directly."
+echo "[ONLY IF PROGRESS STUCK (> 1 min)]: Close script and run Unity directly."
 echo "There are probably startup problems which do not allow to perform project creation."
 echo ""
 
