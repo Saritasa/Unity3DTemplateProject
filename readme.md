@@ -49,6 +49,11 @@ This script will warns you if you already have python. And suggests options.
 cookiecutter https://github.com/Saritasa/Unity3DTemplateProject.git
 ```
 
+Use following command in order to add remote to your repo:
+```
+git remote add origin https://path.to.repo.com
+```
+
 # Result
 New .git repo, configured to work with Unity and git-lfs (optional). It contains git-hooks, useful scripts and git configs which solve certain 'git vs Unity' problems. Also it contains Unity project structure which is recomended by 'Saritasa Unity guidelines and best practicies'.
 
