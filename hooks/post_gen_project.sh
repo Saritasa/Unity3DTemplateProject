@@ -32,9 +32,11 @@ git lfs install --local
 rm scripts/fix_false_modified_files.command
 {% endif %}
 
-echo "Running unity to create empty project..."
-echo "[If script stuck (normally it takes < 30s) on this stage -- close script and run Unity directly"
-echo "There are probably some problems on unity startup, e.g. user is not logged in]"
+echo "Running Unity to create empty project..."
+echo ""
+echo "[IF PROGRESS STUCK[> 1 min]]: Close script and run Unity directly."
+echo "There are probably startup problems which do not allow to perform project creation."
+echo ""
 
 "$unityBin" -projectPath $PWD/src/$projectname -quit -batchmode
 
