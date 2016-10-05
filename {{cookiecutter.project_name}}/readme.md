@@ -3,7 +3,9 @@
 # Important
 Do not forget to run this script after project clone:
 
-```./scripts/setup_project.command```
+```
+./scripts/setup_project.command
+```
 
 Otherwise project will be not initialized, git settings are not adjusted, git hooks are not installed.
 It is safe to run this script several times (in case if you forget whether you executed it before).

@@ -20,6 +20,8 @@ Source tree for Mac, by default, uses emdedded versions of git and git-lfs which
 
 # Setup instructions (Mac)
 Exclude steps if you already have certain component. Or update it, see: ```brew upgrade ...```
+It is assumed that http://brew.sh/ is installed. (TODO: Check with MacPorts)
+
 ```
 brew install git
 brew install git-lfs
@@ -27,13 +29,22 @@ brew install python
 pip install cookiecutter
 ```
 
-It is assumed that http://brew.sh/ is installed. (TODO: Check with MacPorts)
+In case if python is already installed to system:
+```
+# the only that you need -- cookiecutter
+pip install cookiecutter
+# or if you don't have pip use:
+easy_install cookiecutter
+# or 
+sudo easy_install cookiecutter
+```
 
 # Setup instructions (Windows)
 
 Exclude steps if you already have certain component. Or update it, see: ```choco upgrade ...```
 
-(Use powershel)
+(Use PowerShell)
+
 ```
 choco install git
 choco install git-lfs
@@ -70,6 +81,8 @@ Answer:
   * Create .gitattributes file
   * Initialize git in destination folder
   * Run ```./scripts/setup_project.command```
+    * Set proper git config 
+    * Set up git hooks
   * [optional] Initialize git-lfs
   * [optional] Remove git-lfs specific stuf from non-lfs project
   * Run Unity without UI in order to create empty project
