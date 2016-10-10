@@ -76,7 +76,7 @@ New .git repo, configured to work with Unity and git-lfs (optional). It contains
 Answer:
 * ```git clone``` current repo
 * Run quiz
-* Make replacements in project according to quiz resuts ({{ cookiecutter.var }} is replaced by 'var_from_quiz')
+* Make replacements in project according to quiz results ({{ cookiecutter.var }} is replaced by 'var_from_quiz')
 * Call [post_gen_project.sh](https://github.com/Saritasa/Unity3DTemplateProject/blob/master/hooks/post_gen_project.sh "hook")  hook:
   * Create .gitattributes file
   * Initialize git in destination folder
