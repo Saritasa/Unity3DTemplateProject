@@ -39,7 +39,7 @@ EOF
 		fi
 	elif [ "${base: -1}" != "/" ]; then # Skip files which start with . (e.g. .gitkeep) unity does not see them
 		p="$f"
-		while [ $(basename "$p") != "Assets" ]; do
+		while [[ $(basename "$p") != "Assets" ]]; do
 			if [ $(git ls-files --cached -- "$p.meta" | wc -l) = 0 ]; then
 				cat <<EOF
 Error: Missing meta file.
@@ -81,7 +81,7 @@ EOF
 		fi
 	else
 		p="$f"
-		while [ $(basename "$p") != "Assets" ]; do
+		while [[ $(basename "$p") != "Assets" ]]; do
 			if [ $(git ls-files --cached -- "$p" | wc -l) = 0 ] && [ $(git ls-files --cached -- "$p.meta" | wc -l) != 0 ]; then
 				cat <<EOF
 Error: Missing meta file.
