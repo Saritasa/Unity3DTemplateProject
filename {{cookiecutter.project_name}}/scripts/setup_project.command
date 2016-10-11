@@ -12,4 +12,9 @@ fi
 # core.hooksPath available for git 2.9.0 and +
 git config core.hooksPath './scripts/hooks'
 
+{% if cookiecutter.use_gitlfs == "y" %}
+echo "Initialize git-lfs:"
+git lfs install --local
+{% endif %}
+
 echo "Project setup is successfully completed."

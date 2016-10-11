@@ -25,9 +25,7 @@ git init
 
 ./scripts/setup_project.command $ostype
 
-{% if cookiecutter.use_gitlfs == "y" %}
-git lfs install --local
-{% else %}
+{% if cookiecutter.use_gitlfs == "n" %}
 # Remove git-lfs specific files
 rm scripts/fix_false_modified_files.command
 {% endif %}
