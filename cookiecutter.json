@@ -2,5 +2,9 @@
   "project_name": "new_project_name",
   "project_description": "TODO: Several words about project.",
   "os_type": ["Windows", "Mac"],
-  "use_gitlfs": ["y", "n"]
+  "use_gitlfs": ["y", "n"],
+  "_copy_without_render": [
+        "docs/*.html",
+        "docs/source/_themes/*"
+  ]
 }

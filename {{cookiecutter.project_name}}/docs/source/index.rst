@@ -6,6 +6,8 @@
 Welcome to {{cookiecutter.project_name}}'s documentation!
 =========================================================
 
+.. warning:: Prior project setup information is stored in INSTALL.md, README.md. Useful information can also be found here: Unity3DTemplateProject_. 
+
 Contents:
 
 .. toctree::
@@ -20,3 +22,4 @@ Indices and tables
 * :ref:`modindex`
 * :ref:`search`
 
+.. _Unity3DTemplateProject: https://github.com/Saritasa/Unity3DTemplateProject
