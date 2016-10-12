@@ -8,7 +8,7 @@ This project requires following binaries:
 * git-lfs (min 1.4.1) [optional]
 * Unity 5.4+
 * python (tested with versions 3.5.2 and 2.7.12)
-* pip (goes with python usualy)
+* pip or easy_install (goes with python usualy)
 * cookiecutter
 * bash (for windows, shipped with git)
 
