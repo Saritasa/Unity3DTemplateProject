@@ -27,6 +27,6 @@ This project requires following binaries:
      ```
      After that they will be available in `/docs/build/html`.
 
- # Attention
+# Attention
 SourceTree for Mac, by default, uses embedded version of git {% if cookiecutter.use_gitlfs == "y" -%} [git-lfs] {% endif %}which is older than required. Install last version of binaries and switch to 'Use system ...' option in **SourceTree -> Preferences -> Git**.
 
