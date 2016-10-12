@@ -43,3 +43,8 @@ Thumbs.db
 !src/*/Assets/UserWorkspace
 src/*/Assets/UserWorkspace/*
 !src/*/Assets/UserWorkspace/.gitkeep
+
+# ================= #
+# Exlude docs build #
+# ================= #
+/docs/build
