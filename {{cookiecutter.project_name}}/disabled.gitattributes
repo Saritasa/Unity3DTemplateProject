@@ -32,3 +32,4 @@
 *.prefab eol=lf
 *.meta  eol=lf
 *.asset  eol=lf
+LightingData.asset -text
