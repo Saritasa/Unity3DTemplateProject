@@ -40,4 +40,8 @@ echo ""
 
 git add .
 
+# Change mode for executable files
+git ls-files *.command -z | xargs -0 git update-index --add --chmod=+x
+git ls-files scripts/hooks/* -z | xargs -0 git update-index --add --chmod=+x
+
 git commit -m "Create empty Unity project."
