@@ -8,7 +8,7 @@ Do not forget to run this script after project clone:
 ```
 
 Otherwise project will be not initialized, git settings are not adjusted, git hooks are not installed.
-It is safe to run this script several times (in case if you forget whether you executed it before).
+It is safe to run this script several times (in case if you forget whether you executed it before). The only rescriction: *you shall not have staged files at the moment*.
 
 # Description:
 {{ cookiecutter.project_description }}

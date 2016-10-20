@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# if unityBin is not match your setup, consider to clone this repo as is, change path call, cookiecutter localy
 {% if cookiecutter.os_type == "Mac" %}
 unityBin="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
 {% elif cookiecutter.os_type == "Windows" %}
@@ -23,8 +24,6 @@ mv disabled.gitattributes .gitattributes
 
 git init
 
-./scripts/setup_project.command $ostype
-
 {% if cookiecutter.use_gitlfs == "n" %}
 # Remove git-lfs specific files
 rm scripts/fix_false_modified_files.command
@@ -38,10 +37,11 @@ echo ""
 
 "$unityBin" -projectPath $PWD/src/$projectname -quit -batchmode
 
-git add .
+./scripts/setup_project.command $ostype
 
-# Change mode for executable files
-git ls-files *.command -z | xargs -0 git update-index --add --chmod=+x
-git ls-files scripts/hooks/* -z | xargs -0 git update-index --add --chmod=+x
+echo ""
+echo "Commit changes"
+
+git add .
 
 git commit -m "Create empty Unity project."
