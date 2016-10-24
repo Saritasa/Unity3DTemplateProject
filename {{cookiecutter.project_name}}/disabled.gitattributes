@@ -1,31 +1,34 @@
 {%- if cookiecutter.use_gitlfs == "y" -%}
-*.wav filter=lfs diff=lfs merge=lfs -text
-*.fbx filter=lfs diff=lfs merge=lfs -text
-*.tif filter=lfs diff=lfs merge=lfs -text
-*.tga filter=lfs diff=lfs merge=lfs -text
-*.bmp filter=lfs diff=lfs merge=lfs -text
-*.jpg filter=lfs diff=lfs merge=lfs -text
-*.psd filter=lfs diff=lfs merge=lfs -text
-*.unitypackage filter=lfs diff=lfs merge=lfs -text
-*.ai filter=lfs diff=lfs merge=lfs -text
-*.otf filter=lfs diff=lfs merge=lfs -text
-*.ttf filter=lfs diff=lfs merge=lfs -text
-*.png filter=lfs diff=lfs merge=lfs -text
-*.pdf filter=lfs diff=lfs merge=lfs -text
-*.blend filter=lfs diff=lfs merge=lfs -text
-*.blend1 filter=lfs diff=lfs merge=lfs -text
-*.gif filter=lfs diff=lfs merge=lfs -text
-*.3ds filter=lfs diff=lfs merge=lfs -text
-*.dll filter=lfs diff=lfs merge=lfs -text
-*.so filter=lfs diff=lfs merge=lfs -text
-*.spm filter=lfs diff=lfs merge=lfs -text
-*.asset filter=lfs diff=lfs merge=lfs -text
-*.exr filter=lfs diff=lfs merge=lfs -text
-*.ogg filter=lfs diff=lfs merge=lfs -text
-*.mp3 filter=lfs diff=lfs merge=lfs -text
-*.zip filter=lfs diff=lfs merge=lfs -text
-*.aif filter=lfs diff=lfs merge=lfs -text
-{%- endif %}
+{%- set lfs_config_strig = 'filter=lfs diff=lfs merge=lfs ' -%}
+{%- else -%}
+{%- set lfs_config_strig = '' -%}
+{%- endif -%}
+*.wav {{ lfs_config_strig }}-text
+*.fbx {{ lfs_config_strig }}-text
+*.tif {{ lfs_config_strig }}-text
+*.tga {{ lfs_config_strig }}-text
+*.bmp {{ lfs_config_strig }}-text
+*.jpg {{ lfs_config_strig }}-text
+*.psd {{ lfs_config_strig }}-text
+*.unitypackage {{ lfs_config_strig }}-text
+*.ai {{ lfs_config_strig }}-text
+*.otf {{ lfs_config_strig }}-text
+*.ttf {{ lfs_config_strig }}-text
+*.png {{ lfs_config_strig }}-text
+*.pdf {{ lfs_config_strig }}-text
+*.blend {{ lfs_config_strig }}-text
+*.blend1 {{ lfs_config_strig }}-text
+*.gif {{ lfs_config_strig }}-text
+*.3ds {{ lfs_config_strig }}-text
+*.dll {{ lfs_config_strig }}-text
+*.so {{ lfs_config_strig }}-text
+*.spm {{ lfs_config_strig }}-text
+*.asset {{ lfs_config_strig }}-text
+*.exr {{ lfs_config_strig }}-text
+*.ogg {{ lfs_config_strig }}-text
+*.mp3 {{ lfs_config_strig }}-text
+*.zip {{ lfs_config_strig }}-text
+*.aif {{ lfs_config_strig }}-text
 
 *.unity  eol=lf
 *.mat    eol=lf
