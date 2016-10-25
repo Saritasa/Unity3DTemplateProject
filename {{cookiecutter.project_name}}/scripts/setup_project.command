@@ -1,5 +1,7 @@
 #!/bin/sh
 
+cd "$(git rev-parse --show-cdup)"
+
 if [[ "$1" == 'Mac' ]]; then
    git config core.autocrlf input
 elif [[ "$1" == 'Windows' ]]; then
@@ -33,5 +35,10 @@ git ls-files scripts/hooks/* -z | xargs -0 git update-index --add --chmod=+x
 # In case if someone accidently will change permissions hooks will not work on Mac
 # It is ok if this commit will appear in your local branch after clone. Push it as soon as possible
 git commit -m "Shell scripts with proper permissions"
+
+# Fix problem on Mac. All files changed by 'git update-index --add --chmod=+x' appear simultaneously as staged and unstaged
+# Thus we commit staged and revert unstaged files
+git ls-files -z *.command | xargs -0 git checkout
+git ls-files -z scripts/hooks/* | xargs -0 git checkout
 
 echo "Project setup is successfully completed."
