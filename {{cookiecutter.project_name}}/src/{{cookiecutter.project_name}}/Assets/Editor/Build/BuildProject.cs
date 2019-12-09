@@ -15,10 +15,16 @@ public static partial class BuildProject
 
     static BuildProject()
     {
+        var invokeConfigPath = GetCIFolder().CombineAsPath("invoke.yaml");
+        if (!File.Exists(invokeConfigPath))
+        {
+            UnityEngine.Debug.LogError("invoke.yaml is not found. Please follow instructions in project's readme.md to setup it properly");
+            return;
+        }
+
         // Read keystore variables from invoke.yaml
-        var invokeYamlPath = File.ReadAllText(GetCIFolder().CombineAsPath("invoke.yaml"));
         var deserializer = new Deserializer();
-        var invokeYaml = deserializer.Deserialize<Dictionary<string, string>>(invokeYamlPath);
+        var invokeYaml = deserializer.Deserialize<Dictionary<string, string>>(File.ReadAllText(invokeConfigPath));
 
         if (invokeYaml.ContainsKey(KeyStorePassFieldName) &&
             invokeYaml.ContainsKey(KeyAliasNameFieldName) &&
