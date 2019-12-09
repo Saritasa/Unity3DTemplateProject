@@ -19,6 +19,7 @@ ExportedObj/
 *.user
 *.unityproj
 *.booproj
+.vs
 
 # Ignore sln files by default, remove this directive if more advanced setup is required.
 *.sln
@@ -47,3 +48,9 @@ src/*/Assets/UserWorkspace/*
 # Exlude docs build #
 # ================= #
 /docs/build
+
+# ================= #
+# Exlude builds     #
+# ================= #
+/src/*/Build
+/scripts/CI/invoke.yaml
