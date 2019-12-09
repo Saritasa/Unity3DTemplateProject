@@ -12,9 +12,19 @@ exit 1
 
 if [ ! -f "$unityBin" ]; then
 echo $unityBin
-    echo "Can't find Unity editor binaries"
-    read input_variable
-    exit 1
+    echo "Can't find Unity editor binaries. Please enter the path to the Unity Editor.(Drag and drop Unity.exe here.."
+    read unityBinRaw
+	
+	#! for windows user removes single quates when drga and drop Unity.exe
+	unityBin="${unityBinRaw%\'}"
+	unityBin="${unityBin#\'}"
+
+	if [ ! -f "$unityBin" ]; then
+	echo $unityBin
+	echo "Can't find Unity editor on specified path. Exiting..."
+		sleep 3
+		exit 1
+	fi
 fi
 
 ostype="{{cookiecutter.os_type}}"
