@@ -6,7 +6,7 @@ apiPath="../../src/{{cookiecutter.project_name}}/Assets/Scripts/API/Model"
 testsPathSrc="ret/API/Models/Test/"
 testsPathDst="../../src/{{cookiecutter.project_name}}/Assets/Scripts/Editor/API/Model/Tests"
 
-source ./develop_cfg.sh
+source ./confg.sh
 
 curl --remote-name https://apidocs.saritasa.io/{{cookiecutter.project_name}}/develop/{{cookiecutter.project_name}}-latest.yaml -k
 
