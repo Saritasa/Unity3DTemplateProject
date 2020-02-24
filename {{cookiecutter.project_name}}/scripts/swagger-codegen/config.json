@@ -1,0 +1,5 @@
+{
+  "packageName": "{{cookiecutter.project_name}}.API",
+  "packageVersion": "1.0.0",
+  "apiModelsPath": "{{cookiecutter.project_name}}/Api/Models/"
+}
