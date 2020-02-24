@@ -1,10 +1,10 @@
 #!/bin/sh
 
 modelsPath="ret/{{cookiecutter.project_name}}/API/Model/"
-apiPath="../../src/{{cookiecutter.project_name}}/Assets/Scripts/API/Model"
+apiPath="../../src/{{cookiecutter.project_name}}/Assets/{{cookiecutter.project_name}}/Scripts/API/Model"
 
 testsPathSrc="ret/API/Models/Test/"
-testsPathDst="../../src/{{cookiecutter.project_name}}/Assets/Scripts/Editor/API/Model/Tests"
+testsPathDst="../../src/{{cookiecutter.project_name}}/Assets/{{cookiecutter.project_name}}/Scripts/Editor/API/Model/Tests"
 
 source ./confg.sh
 
