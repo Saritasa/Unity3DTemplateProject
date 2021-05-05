@@ -3,36 +3,170 @@
 {%- else -%}
 {%- set lfs_config_strig = '' -%}
 {%- endif -%}
-*.wav {{ lfs_config_strig }}-text
-*.fbx {{ lfs_config_strig }}-text
+
+#Image
+
 *.tif {{ lfs_config_strig }}-text
+*.TIF {{ lfs_config_strig }}-text
+
+*.tiff {{ lfs_config_strig }}-text
+*.TIFF {{ lfs_config_strig }}-text
+
 *.tga {{ lfs_config_strig }}-text
+*.TGA {{ lfs_config_strig }}-text
+
 *.bmp {{ lfs_config_strig }}-text
+*.BMP {{ lfs_config_strig }}-text
+
 *.jpg {{ lfs_config_strig }}-text
+*.JPG {{ lfs_config_strig }}-text
+
+*.jpeg {{ lfs_config_strig }}-text
+*.JPEG {{ lfs_config_strig }}-text
+
 *.psd {{ lfs_config_strig }}-text
-*.unitypackage {{ lfs_config_strig }}-text
+*.PSD {{ lfs_config_strig }}-text
+
 *.ai {{ lfs_config_strig }}-text
-*.otf {{ lfs_config_strig }}-text
-*.ttf {{ lfs_config_strig }}-text
+*.AI {{ lfs_config_strig }}-text
+
 *.png {{ lfs_config_strig }}-text
-*.pdf {{ lfs_config_strig }}-text
-*.blend {{ lfs_config_strig }}-text
-*.blend1 {{ lfs_config_strig }}-text
+*.PNG {{ lfs_config_strig }}-text
+
 *.gif {{ lfs_config_strig }}-text
-*.3ds {{ lfs_config_strig }}-text
-*.dll {{ lfs_config_strig }}-text
-*.so {{ lfs_config_strig }}-text
-*.spm {{ lfs_config_strig }}-text
-*.asset {{ lfs_config_strig }}-text
+*.GIF {{ lfs_config_strig }}-text
+
 *.exr {{ lfs_config_strig }}-text
-*.ogg {{ lfs_config_strig }}-text
-*.mp3 {{ lfs_config_strig }}-text
-*.zip {{ lfs_config_strig }}-text
+*.EXR {{ lfs_config_strig }}-text
+
+*.hdr {{ lfs_config_strig }}-text
+*.HDR {{ lfs_config_strig }}-text
+
+#Video
+
+*.mp4 {{ lfs_config_strig }}-text
+*.MP4 {{ lfs_config_strig }}-text
+
+*.mov {{ lfs_config_strig }}-text
+*.MOV {{ lfs_config_strig }}-text
+
+#Audio
+
+*.wav {{ lfs_config_strig }}-text
+*.WAV {{ lfs_config_strig }}-text
+
 *.aif {{ lfs_config_strig }}-text
+*.AIF {{ lfs_config_strig }}-text
+
+*.ogg {{ lfs_config_strig }}-text
+*.OGG {{ lfs_config_strig }}-text
+
+*.mp3 {{ lfs_config_strig }}-text
+*.MP3 {{ lfs_config_strig }}-text
+
+#3D Object
+
+*.fbx {{ lfs_config_strig }}-text
+*.FBX {{ lfs_config_strig }}-text
+
+*.blend {{ lfs_config_strig }}-text
+*.BLEND {{ lfs_config_strig }}-text
+
+*.blend1 {{ lfs_config_strig }}-text
+*.BLEND1 {{ lfs_config_strig }}-text
+
+*.3ds {{ lfs_config_strig }}-text
+*.3DS {{ lfs_config_strig }}-text
+
+*.max {{ lfs_config_strig }}-text
+*.MAX {{ lfs_config_strig }}-text
+
+*.mb {{ lfs_config_strig }}-text
+*.MB {{ lfs_config_strig }}-text
+
+*.obj {{ lfs_config_strig }}-text
+*.OBJ {{ lfs_config_strig }}-text
+
+#ETC
+
+*.unitypackage {{ lfs_config_strig }}-text
+*.UNITYPACKAGE {{ lfs_config_strig }}-text1
+
+*.otf {{ lfs_config_strig }}-text
+*.OTF {{ lfs_config_strig }}-text
+
+*.ttf {{ lfs_config_strig }}-text
+*.TTF {{ lfs_config_strig }}-text
+
+*.pdf {{ lfs_config_strig }}-text
+*.PDF {{ lfs_config_strig }}-text
+
+*.dll {{ lfs_config_strig }}-text
+*.DLL {{ lfs_config_strig }}-text
+
+*.so {{ lfs_config_strig }}-text
+*.SO {{ lfs_config_strig }}-text
+
+*.spm {{ lfs_config_strig }}-text
+*.SPM {{ lfs_config_strig }}-text
+
+*.asset {{ lfs_config_strig }}-text
+*.ASSET {{ lfs_config_strig }}-text
+
+*.zip {{ lfs_config_strig }}-text
+*.ZIP {{ lfs_config_strig }}-text
+
+*.7z {{ lfs_config_strig }}-text
+*.7Z {{ lfs_config_strig }}-text
+
+*.a {{ lfs_config_strig }}-text
+*.A {{ lfs_config_strig }}-text
+
+*.mdb {{ lfs_config_strig }}-text
+*.MDB {{ lfs_config_strig }}-text
+
+*.pdb {{ lfs_config_strig }}-text
+*.PDB {{ lfs_config_strig }}-text
+
+*.jar {{ lfs_config_strig }}-text
+*.JAR {{ lfs_config_strig }}-text
+
+*.rns {{ lfs_config_strig }}-text
+*.RNS {{ lfs_config_strig }}-text
+
+*.reason {{ lfs_config_strig }}-text
+*.REASON {{ lfs_config_strig }}-text
+
+*.lxo {{ lfs_config_strig }}-text
+*.LXO {{ lfs_config_strig }}-text
+
+*.eps {{ lfs_config_strig }}-text
+*.EPS {{ lfs_config_strig }}-text
+
+*.pak {{ lfs_config_strig }}-text
+*.PAK {{ lfs_config_strig }}-text
+
+*.exe {{ lfs_config_strig }}-text
+*.EXE {{ lfs_config_strig }}-text
+
+*.dylib {{ lfs_config_strig }}-text
+*.DYLIB {{ lfs_config_strig }}-text
+
+*.lib {{ lfs_config_strig }}-text
+*.LIB {{ lfs_config_strig }}-text
+
+*.aar {{ lfs_config_strig }}-text
+*.AAR {{ lfs_config_strig }}-text
 
 *.unity  eol=lf
+*.UNITY  eol=lf
 *.mat    eol=lf
+*.MAT    eol=lf
 *.prefab eol=lf
+*.PREFAB eol=lf
 *.meta  eol=lf
+*.META  eol=lf
 *.asset  eol=lf
+*.ASSET  eol=lf
 LightingData.asset -text
+*Terrain*.asset  -text
