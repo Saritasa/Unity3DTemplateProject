@@ -57,6 +57,8 @@ rm InstallCookiecutterWin.ps1
 ```
 This script will warns you if you already have python. And suggests options.
 
+[You can also check wiki for more information.](https://dotnetwiki.saritasa.rocks/unity/UnityProjectTemplate.html)
+
 # Usage
 ```
 cookiecutter https://github.com/Saritasa/Unity3DTemplateProject.git
