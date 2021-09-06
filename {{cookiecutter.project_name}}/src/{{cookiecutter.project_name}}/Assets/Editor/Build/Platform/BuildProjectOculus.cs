@@ -16,16 +16,18 @@ public static partial class BuildProjectSupportPlatform
 {
     const string OculusDefine = "BUILD_OCULUS";
 
-    [MenuItem("Build Tools/Build Define Symbols/Android/Oculus")]
+    const string EditorPathOculus = "Build Tools/Supported Build Target/Android/Oculus";
+
+    [MenuItem(EditorPathOculus)]
     public static void AddOculusSupport()
     {
-        AddSupportBuildTool(BuildTargetGroup.Android, OculusDefine);
+        AddSupportedPlatform(BuildTargetGroup.Android, OculusDefine);
     }
 
-    [MenuItem("Build Tools/Build Define Symbols/Android/Oculus", true)]
+    [MenuItem(EditorPathOculus, true)]
     public static bool IsOculusDefined()
     {
-        Menu.SetChecked("Build Tools/Build Define Symbols/Android/Oculus",
+        Menu.SetChecked(EditorPathOculus,
             IsBuildSymbolSet(BuildTargetGroup.Android, OculusDefine));
         return true;
     }

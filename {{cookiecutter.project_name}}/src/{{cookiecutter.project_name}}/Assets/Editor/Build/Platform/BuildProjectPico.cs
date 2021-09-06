@@ -14,16 +14,18 @@ public static partial class BuildProjectSupportPlatform
 {
     const string PicoDefine = "BUILD_PICO";
 
-    [MenuItem("Build Tools/Build Define Symbols/Android/Pico")]
+    const string EditorPathPico = "Build Tools/Supported Build Target/Android/Pico";
+
+    [MenuItem(EditorPathPico)]
     public static void AddPicoSupport()
     {
-        AddSupportBuildTool(BuildTargetGroup.Android, PicoDefine);
+        AddSupportedPlatform(BuildTargetGroup.Android, PicoDefine);
     }
 
-    [MenuItem("Build Tools/Build Define Symbols/Android/Pico", true)]
+    [MenuItem(EditorPathPico, true)]
     public static bool IsPicoDefined()
     {
-        Menu.SetChecked("Build Tools/Build Define Symbols/Android/Pico",
+        Menu.SetChecked(EditorPathPico,
             IsBuildSymbolSet(BuildTargetGroup.Android, PicoDefine));
         return true;
     }

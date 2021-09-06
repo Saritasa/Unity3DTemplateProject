@@ -93,6 +93,4 @@ public static partial class BuildProject
         }
         return new GitVersionVariables();
     }
-
-
 }

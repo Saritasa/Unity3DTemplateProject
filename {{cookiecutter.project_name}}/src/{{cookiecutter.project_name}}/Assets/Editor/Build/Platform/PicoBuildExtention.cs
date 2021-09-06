@@ -78,24 +78,6 @@ public class PicoBuildExtention : PXR_BuildAndRunEW
         set { SetPrivateFieldValue("syncCancelToken", value); }
     }
 
-    //protected static string gradlePath
-    //{
-    //    get { return GetPrivateFieldValue<string>("gradlePath"); }
-    //    set { SetPrivateFieldValue("gradlePath", value); }
-    //}
-
-    //protected static string jdkPath
-    //{
-    //    get { return GetPrivateFieldValue<string>("jdkPath"); }
-    //    set { SetPrivateFieldValue("jdkPath", value); }
-    //}
-
-    //protected static string androidSdkPath
-    //{
-    //    get { return GetPrivateFieldValue<string>("androidSdkPath"); }
-    //    set { SetPrivateFieldValue("androidSdkPath", value); }
-    //}
-
     protected static string applicationIdentifier
     {
         get { return GetPrivateFieldValue<string>("applicationIdentifier"); }

@@ -11,16 +11,18 @@ public static partial class BuildProjectSupportPlatform
 {
     const string AndroidXRDefine = "BUILD_ANDROID_XR";
 
-    [MenuItem("Build Tools/Build Define Symbols/Android/Android XR")]
+    const string EditorPathAndroidXR = "Build Tools/Supported Build Target/Android/Android XR";
+
+    [MenuItem(EditorPathAndroidXR)]
     public static void AddAndroidXRSupport()
     {
-        AddSupportBuildTool(BuildTargetGroup.Android, AndroidXRDefine);
+        AddSupportedPlatform(BuildTargetGroup.Android, AndroidXRDefine);
     }
 
-    [MenuItem("Build Tools/Build Define Symbols/Android/Android XR", true)]
+    [MenuItem(EditorPathAndroidXR, true)]
     public static bool IsAndroidXRDefined()
     {
-        Menu.SetChecked("Build Tools/Build Define Symbols/Android/Android XR",
+        Menu.SetChecked(EditorPathAndroidXR,
             IsBuildSymbolSet(BuildTargetGroup.Android, AndroidXRDefine));
         return true;
     }

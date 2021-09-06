@@ -9,7 +9,7 @@ public static partial class BuildProjectSupportPlatform
     {
     }
 
-    private static void AddSupportBuildTool(BuildTargetGroup buildTargetGroup, string definesToAdd)
+    private static void AddSupportedPlatform(BuildTargetGroup buildTargetGroup, string definesToAdd)
     {
         var symbols =
             new List<string>(PlayerSettings.GetScriptingDefineSymbolsForGroup(buildTargetGroup).Split(';'));
