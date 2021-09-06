@@ -6,6 +6,7 @@ Obj/
 UnityGenerated/
 Library/
 Assets/AssetStoreTools*
+*.log
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
@@ -20,6 +21,7 @@ ExportedObj/
 *.unityproj
 *.booproj
 .vs
+.vsconfig
 
 # Ignore sln files by default, remove this directive if more advanced setup is required.
 *.sln
