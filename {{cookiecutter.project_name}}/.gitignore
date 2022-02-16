@@ -7,6 +7,7 @@ UnityGenerated/
 Library/
 Assets/AssetStoreTools*
 *.log
+ProjectSettings/EditorUserSettings.asset
 
 # ===================================== #
 # Visual Studio / MonoDevelop generated #
