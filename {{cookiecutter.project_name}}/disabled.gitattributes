@@ -89,9 +89,6 @@
 
 #ETC
 
-*.unitypackage {{ lfs_config_strig }}-text
-*.UNITYPACKAGE {{ lfs_config_strig }}-text1
-
 *.otf {{ lfs_config_strig }}-text
 *.OTF {{ lfs_config_strig }}-text
 
@@ -109,9 +106,6 @@
 
 *.spm {{ lfs_config_strig }}-text
 *.SPM {{ lfs_config_strig }}-text
-
-*.asset {{ lfs_config_strig }}-text
-*.ASSET {{ lfs_config_strig }}-text
 
 *.zip {{ lfs_config_strig }}-text
 *.ZIP {{ lfs_config_strig }}-text
@@ -158,6 +152,18 @@
 *.aar {{ lfs_config_strig }}-text
 *.AAR {{ lfs_config_strig }}-text
 
+# Unity binary files
+
+*.unitypackage {{ lfs_config_strig }}-text
+*.UNITYPACKAGE {{ lfs_config_strig }}-text
+
+LightingData.asset {{ lfs_config_strig }}-text
+LightingData.ASSET {{ lfs_config_strig }}-text
+
+*Terrain*.asset  {{ lfs_config_strig }}-text
+*Terrain*.ASSET  {{ lfs_config_strig }}-text
+
+
 *.unity  eol=lf
 *.UNITY  eol=lf
 *.mat    eol=lf
@@ -168,5 +174,3 @@
 *.META  eol=lf
 *.asset  eol=lf
 *.ASSET  eol=lf
-LightingData.asset -text
-*Terrain*.asset  -text
