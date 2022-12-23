@@ -4,7 +4,7 @@
 {% if cookiecutter.os_type == "Mac" %}
 unityBin="/Applications/Unity/Unity.app/Contents/MacOS/Unity"
 {% elif cookiecutter.os_type == "Windows" %}
-unityBin="/C/Program Files/Unity/Hub/Editor/2020.2.1f1/Editor/Unity.exe"
+unityBin="/C/Program Files/Unity/Hub/Editor/2021.3.7f1/Editor/Unity.exe"
 {% else %}
 echo "Operating system is not specified"
 exit 1
