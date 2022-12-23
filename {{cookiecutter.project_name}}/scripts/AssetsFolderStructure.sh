@@ -85,11 +85,12 @@ do
     fi
 done
 
+# Can't use array size for check, because of jinja2 and shell conflict.
 
-if [[ ${#allUnityProjects[@]} == 0 ]]; then
-    echo "No Unity projects in \"src\" folder"
-    drag_and_drop
-else
+if [ -d "${allUnityProjects[0]}" ]; then
     echo -e "Unity projects already exist in the \"src\" folder. \n Do you want to choose one of them? [1]  \n or Drag and Drop Unity Assets folder [2]?"
     choose_between_dd_and_selection
+else
+    echo "No Unity projects in \"src\" folder"
+    drag_and_drop
 fi
