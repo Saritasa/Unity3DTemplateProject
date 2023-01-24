@@ -70,7 +70,7 @@ git remote add origin https://path.to.repo.com
 ```
 
 # Result
-New .git repo, configured to work with Unity and git-lfs (optional). It contains git-hooks, useful scripts and git configs which solve certain 'git vs Unity' problems. Also it contains Unity project structure which is recomended by 'Saritasa Unity guidelines and best practicies'.
+New .git repo, configured to work with Unity and git-lfs (optional). It contains git-hooks, useful scripts and git configs which solve certain 'git vs Unity' problems.
 
 # What's happening
 > What's happening when i call cookiecutter for this repo?
@@ -89,3 +89,13 @@ Answer:
   * [optional] Remove git-lfs specific stuf from non-lfs project
   * Run Unity without UI in order to create empty project
   * Commit all changes to git
+
+# Setup new Unity project
+
+* Create new Unity project in src folder from Unity Template.
+* Use same project name as {{cookiecutter.project_name}}
+* In new Unity project, open Assets folder and delete any samples inside.
+* Open {{cookiecutter.project_name}}/scripts folder and run AssetsFolderStructure.sh script.
+* Follow the prompts from the console.
+* Result: Asset folder contains Unity project structure which is recomended by 'Saritasa Unity guidelines and best practicies'.
+* Run the created unity project in order to .meta files appear in the git.
