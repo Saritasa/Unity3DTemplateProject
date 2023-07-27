@@ -46,11 +46,10 @@ Thumbs.db
 !src/*/Assets/UserWorkspace
 src/*/Assets/UserWorkspace/*
 !src/*/Assets/UserWorkspace/.gitkeep
-!src/*/Assets/UserWorkspace/Keystore
 
-!src/*/Assets/Keystore
-src/*/Assets/Keystore/*
-!src/*/Assets/Keystore/.gitkeep
+!src/*/Assets/UserWorkspace/Keystore
+src/*/Assets/UserWorkspace/Keystore/*
+!src/*/Assets/UserWorkspace/Keystore/.gitkeep
 
 # ================= #
 # Exlude docs build #
