@@ -21,7 +21,7 @@ generate_folders_structure()
     touch "$pathToGenerate"/UI/.gitkeep
     touch "$pathToGenerate"/UserWorkspace/.gitkeep
     touch "$pathToGenerate"/Vendors/.gitkeep
-    touch "$pathToGenerate"/Keystore/.gitkeep
+    touch "$pathToGenerate"/UserWorkspace/Keystore/.gitkeep
 
     echo "Generation succeeded"
 }
