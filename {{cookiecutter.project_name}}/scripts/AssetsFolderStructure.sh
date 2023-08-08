@@ -8,7 +8,7 @@ pathToGenerate=""
 #Functions
 generate_folders_structure()
 {
-    mkdir -p "$pathToGenerate"/{Audio,Editor,Models,Plugins,Scenes,Scripts/API,Shaders,UI,UserWorkspace,Vendors,UserWorkspace/Keystore}
+    mkdir -p "$pathToGenerate"/{Audio,Editor,Models,Plugins,Scenes,Scripts/API,Shaders,UI,UserWorkspace,Vendors}
 
     touch "$pathToGenerate"/Audio/.gitkeep
     touch "$pathToGenerate"/Editor/.gitkeep
@@ -21,7 +21,6 @@ generate_folders_structure()
     touch "$pathToGenerate"/UI/.gitkeep
     touch "$pathToGenerate"/UserWorkspace/.gitkeep
     touch "$pathToGenerate"/Vendors/.gitkeep
-    touch "$pathToGenerate"/UserWorkspace/Keystore/.gitkeep
 
     echo "Generation succeeded"
 }
