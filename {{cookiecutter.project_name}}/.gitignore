@@ -46,6 +46,9 @@ Thumbs.db
 !src/*/Assets/UserWorkspace
 src/*/Assets/UserWorkspace/*
 !src/*/Assets/UserWorkspace/.gitkeep
+!src/*/Assets/UserWorkspace/Keystores/KeystoreLink.txt
+!src/*/Assets/UserWorkspace/Keystores
+src/*/Assets/UserWorkspace/Keystores/*
 
 # ================= #
 # Exlude docs build #
