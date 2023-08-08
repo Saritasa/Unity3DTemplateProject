@@ -47,10 +47,6 @@ Thumbs.db
 src/*/Assets/UserWorkspace/*
 !src/*/Assets/UserWorkspace/.gitkeep
 
-!src/*/Assets/UserWorkspace/Keystore
-src/*/Assets/UserWorkspace/Keystore/*
-!src/*/Assets/UserWorkspace/Keystore/.gitkeep
-
 # ================= #
 # Exlude docs build #
 # ================= #
