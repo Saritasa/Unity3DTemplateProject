@@ -59,6 +59,19 @@ This script will warns you if you already have python. And suggests options.
 
 [You can also check wiki for more information.](https://dotnetwiki.saritasa.rocks/unity/UnityProjectTemplate.html)
 
+# Alternative setup
+
+You can initialize project by bash script which is located in releases. Download and run it on your PC.
+
+https://github.com/Saritasa/Unity3DTemplateProject/releases/tag/cookiecutterAnalog
+
+1) Paste the link to the unit template (the link to this repository is by default)
+2) Write the name of the project
+3) Write the description of the project
+4) Write the task number
+
+If the script does not see the main or master branch in the project repository, then try updating Git to a newer version
+
 # Usage
 ```
 cookiecutter https://github.com/Saritasa/Unity3DTemplateProject.git
