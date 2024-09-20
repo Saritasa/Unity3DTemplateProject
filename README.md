@@ -1,3 +1,6 @@
+# Deprecated ⚠️
+Moved to: https://github.com/saritasa-nest/saritasa-unity-3d-template-project
+
 # Alternative setup
 
 You can initialize project by bash script which is located in releases. Download and run it on your PC.
